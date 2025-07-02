@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "nuget"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "[Vulnerability Update]"
+    labels:
+      - "dependency:nuget"
+    open-pull-requests-limit: 20
+    # Add assignees
+    assignees:
+      - bouchraRekhadda
